@@ -1,4 +1,5 @@
 import Footer from '@/components/layout/Footer';
+import { GridWrapper } from '@/components/layout/GridWrapper';
 import Header from '@/components/layout/Header';
 import { Metadata } from 'next';
 
@@ -12,11 +13,13 @@ export const metadata: Metadata = {
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
+    <GridWrapper>
+      <div className="flex min-h-screen flex-col">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </div>
+    </GridWrapper>
   );
 };
 
