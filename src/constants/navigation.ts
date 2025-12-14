@@ -66,7 +66,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const SITE_CONFIG = {
-  name: 'BabaCreates',
+  name: 'Baba UI',
   logo: {
     text: 'UI',
     // Replace with actual image path when ready
