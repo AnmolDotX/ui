@@ -59,10 +59,10 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { label: 'Twitter', href: 'https://twitter.com/AnmolDotX', icon: 'twitter' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/AnmolDotX', icon: 'linkedin' },
+  { label: 'Twitter', href: 'https://x.com/BabaCreatesUI', icon: 'twitter' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anmoldotx/', icon: 'linkedin' },
   { label: 'GitHub', href: 'https://github.com/AnmolDotX', icon: 'github' },
-  { label: 'Instagram', href: 'https://instagram.com/AnmolDotX', icon: 'instagram' },
+  { label: 'Instagram', href: 'https://www.instagram.com/babacreates/', icon: 'instagram' },
 ];
 
 export const SITE_CONFIG = {
