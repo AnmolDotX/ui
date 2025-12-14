@@ -1,15 +1,9 @@
 import Footer from '@/components/layout/Footer';
 import { GridWrapper } from '@/components/layout/GridWrapper';
 import Header from '@/components/layout/Header';
-import { Metadata } from 'next';
+import { createMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: {
-    template: '%s | BabaCreates',
-    default: 'BabaCreates',
-  },
-  description: 'Multiple theme UI library developed by https://babacreates.in',
-};
+export const metadata = createMetadata();
 
 const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (

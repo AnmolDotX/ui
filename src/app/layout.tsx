@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from 'next/font/google';
 import './globals.css';
 import { ViewTransitions } from 'next-view-transitions';
 import { ThemeProvider } from '@/components/theme/ThemeProvider';
+import { rootMetadata } from '@/lib/metadata';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -19,10 +20,7 @@ const inter = Inter({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: 'UI | BabaCreates',
-  description: 'Multiple theme UI library developed by https://babacreates.in',
-};
+export const metadata: Metadata = rootMetadata;
 
 export default function RootLayout({
   children,
