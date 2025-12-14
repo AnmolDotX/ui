@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="public/landingPage.png" alt="Baba UI - Multi Theme UI Library" width="100%" />
+  
+  # 🎨 Baba UI
 
-## Getting Started
+**A multi-theme UI component library with stunning design variations**
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+
+[Live Demo](https://ui.babacreates.in) · [Documentation](https://ui.babacreates.in/docs) · [Report Bug](https://github.com/AnmolDotX/ui/issues)
+
+</div>
+
+---
+
+## ✨ What is Baba UI?
+
+Baba UI is a **multi-theme component library** that provides the same components in three distinct visual styles:
+
+| Theme               | Description                                                                         |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| 🍎 **Glassmorphic** | Apple-inspired frosted glass aesthetics with blur, transparency, and subtle shadows |
+| ⚡ **Neobrutalism** | Bold, raw, unapologetic design with hard shadows, thick borders, and high contrast  |
+| 🚀 **Neo-SaaS**     | Modern, clean interfaces inspired by Linear, Vercel, and Stripe                     |
+
+Switch between themes seamlessly while maintaining the same component API.
+
+## 🚧 Status
+
+> **Under Active Development** - We're building the foundation and core components.
+
+### Roadmap
+
+- [ ] Core component library (Button, Input, Card, etc.)
+- [ ] Three theme variants for each component
+- [ ] Theme switcher component
+- [ ] Documentation site
+- [ ] Figma design kit
+- [ ] CLI for component installation
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) with App Router
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [Motion](https://motion.dev/)
+- **Components**: [Radix UI](https://radix-ui.com/) primitives
+- **Language**: TypeScript
+- **Package Manager**: pnpm
+
+## 🚀 Local Setup
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm 8+
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clone the repository
+git clone https://github.com/AnmolDotX/ui.git
+cd ui
+
+# Install dependencies
+pnpm install
+
+# Start development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command      | Description              |
+| ------------ | ------------------------ |
+| `pnpm dev`   | Start development server |
+| `pnpm build` | Build for production     |
+| `pnpm start` | Start production server  |
+| `pnpm lint`  | Run ESLint               |
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── (root)/            # Main site routes
+│   ├── layout.tsx         # Root layout
+│   └── globals.css        # Global styles & theme tokens
+├── components/
+│   ├── layout/            # Layout components (Header, Footer)
+│   ├── shadcn/            # Base UI components
+│   └── theme/             # Theme provider & toggle
+├── constants/             # Navigation & site config
+└── lib/                   # Utilities & metadata
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Theming
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Baba UI uses CSS custom properties for theming. All colors are defined in `globals.css` using the OKLCH color space for better color interpolation.
 
-## Deploy on Vercel
+```css
+/* Example: Teal/Green/Lime palette */
+:root {
+  --primary: oklch(0.55 0.18 175); /* Vibrant teal */
+  --secondary: oklch(0.92 0.04 155); /* Soft green */
+  --accent: oklch(0.85 0.15 130); /* Lime */
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 Connect With Us
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+
+[![Twitter](https://img.shields.io/badge/Twitter-@BabaCreatesUI-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/BabaCreatesUI)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-AnmolDotX-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anmoldotx/)
+[![GitHub](https://img.shields.io/badge/GitHub-AnmolDotX-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AnmolDotX)
+[![Instagram](https://img.shields.io/badge/Instagram-babacreates-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/babacreates/)
+
+**Portfolio**: [babacreates.in](https://babacreates.in)
+
+</div>
+
+---
+
+<div align="center">
+  
+  **Built with ❤️ by [Anmol Kumar](https://babacreates.in)**
+
+⭐ Star this repo if you find it helpful!
+
+</div>
