@@ -12,7 +12,7 @@ export function GridWrapper({ children, className }: GridWrapperProps) {
   return (
     <div
       className={cn(
-        'relative grid min-h-screen grid-cols-[1fr_1px_minmax(0,80rem)_1px_1fr]',
+        'relative grid min-h-screen grid-cols-[1fr_1px_minmax(0,85rem)_1px_1fr]',
         '[--pattern-fg:var(--color-lime-950)]/5 dark:[--pattern-fg:var(--color-lime-50)]/10',
         'bg-white dark:bg-gray-950',
         className,
